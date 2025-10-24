@@ -11,10 +11,10 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Continuar"
         android:backgroundTint="@color/Verde"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="112dp" />
+        android:text="@string/Continuar"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="46dp" />
 
     <Button
         android:id="@+id/button4"
