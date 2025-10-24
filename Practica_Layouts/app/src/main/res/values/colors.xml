@@ -10,4 +10,7 @@
     <color name="Morado">#673AB7</color>
     <color name="Verde_Oscuro">#007903</color>
     <color name="Rojo_Oscuro">#FC0F00</color>
+    <color name="Gris">#707070</color>
+    <color name="grisClaro">#C9C9C9</color>
+
 </resources>
