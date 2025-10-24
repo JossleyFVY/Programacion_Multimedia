@@ -5,4 +5,9 @@
     <color name="rojo">#F44336</color>
     <color name="Azul">#3F51B5</color>
     <color name="Purpura">#9C27B0</color>
+    <color name="Verde">#4CAF50</color>
+    <color name="Azul_Claro">#2196F3</color>
+    <color name="Morado">#673AB7</color>
+    <color name="Verde_Oscuro">#007903</color>
+    <color name="Rojo_Oscuro">#FC0F00</color>
 </resources>
