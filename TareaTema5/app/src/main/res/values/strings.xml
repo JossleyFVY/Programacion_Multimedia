@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TareaTema5</string>
+    <string name="nombreCorreo">Correo</string>
+    <string name="contraseña">Contraseña</string>
+</resources>
