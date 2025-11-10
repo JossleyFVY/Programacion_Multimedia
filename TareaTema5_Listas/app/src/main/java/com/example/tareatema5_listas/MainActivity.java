@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recView);
 
         Peliculas[] pelicula = new Peliculas[2];
-        pelicula[1] = new Peliculas("Piratas del Asiatico","dibujo1");
-        pelicula[2] = new Peliculas("El señor del donut", "dibujo2");
+        pelicula[0] = new Peliculas("Piratas del Asiatico","dibujo1");
+        pelicula[1] = new Peliculas("El señor del donut", "dibujo2");
 
         adaptadorPeliculas adaptador = new adaptadorPeliculas(pelicula);
 
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(linearLayoutManager);
 
+        
         recyclerView.setAdapter(adaptador);
     }
 }
