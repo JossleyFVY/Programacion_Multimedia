@@ -7,8 +7,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView mostrarTiempo;
+    private TextView tiempoTotal;
+    private Button btnPlay;
+    private Button btnPausa;
+    private SeekBar reproduccionBarra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +27,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        mostrarTiempo = findViewById(R.id.mostrarTiempo);
+        tiempoTotal = findViewById(R.id.tiempoTotal);
+        btnPlay = findViewById(R.id.btnPlay);
+        btnPausa = findViewById(R.id.btnPausa);
+        reproduccionBarra = findViewById(R.id.reproduccionBarra);
+
     }
 }
