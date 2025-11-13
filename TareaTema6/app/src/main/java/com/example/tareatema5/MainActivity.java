@@ -1,5 +1,6 @@
 package com.example.tareatema5;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         textoModificable = findViewById(R.id.textoModificar);
 
         bContinuar.setOnClickListener( v -> {
-
+            /* CODIGO PARA QUE MUESTRE EL MENSAJE PERO AHORA AL CAMBIAR DE PANTALLA NO VA TENER UN  USO REAL
             String correo = textoCorreo.getText().toString();
             String contraseña = textoContraseña.getText().toString();
             if(correo.equals("correo@correo.com") && contraseña.equals("123")){
@@ -48,7 +49,13 @@ public class MainActivity extends AppCompatActivity {
             else {
                 textoModificable.setTextColor(Color.RED);
                 textoModificable.setText("Usuarios y contraseñas incorrectos");
-            }
+            }*/
+
+            Intent intent = new Intent(this, SegundaPantalla.class);
+            intent.putExtra("correo",textoCorreo.getText().toString());
+            textoCorreo.setText("");
+            textoContraseña.setText("");
+            startActivity(intent);
 
         });
 
